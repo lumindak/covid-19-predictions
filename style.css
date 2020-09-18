@@ -1,0 +1,26 @@
+body {
+    /* background-image: url(https://thumbs.dreamstime.com/z/double-explosure-businesss-charts-financial-district-m-megapolis-city-73918609.jpg); */
+    background-image: url(covid.jpg);
+    background-repeat: repeat-y,repeat-x;
+    flood-color: orange;
+}
+
+.container {
+    background-color: rgba(141, 178, 247, 0.486);
+    vertical-align: auto;
+    text-align: center;
+}
+
+h1,h3 {
+    text-align: center;
+    color: white
+}
+h4 {
+    text-align: left;
+    color: white
+}
+
+li {
+    display: list-item;
+    text-align:left;
+}

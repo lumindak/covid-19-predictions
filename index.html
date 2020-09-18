@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <br>
+        <title>covid-19</title>
+
+        <div class="container">
+            <h1>Time Series Analysis with Covid-19 data using R </h1>
+            <h3>I have used the public data set made avilable by Johns Hopkins University, 
+                Center for Systems Science and Engineering. 
+                The data related to the state of Georgia was analyzed and predictions for the next 100 days 
+                were obtained.
+                
+                <hr style="height:2px;border-width:0;color:gold;background-color:gold">
+            </h3>
+        </div>
+    </head>
+    
+    <body>
+         <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <h4>
+                The data set:
+               <ul style="list-style-type:square;">
+                <li>https://github.com/CSSEGISandData</li>
+           
+                </h4>
+              </ul>
+              <br>
+              <h4>
+              Part 1: ETL
+              <br>
+               The data set was filtered, transformed and a dataframe was created. The data set contains 
+               daily number of confirmed covid cases for each county. The county data was summed to obtain the 
+               state covid cases. A time series object was created using the number of covid cases and the dates.
+               <br>
+               <br>
+                <img src="covidcases.png" Hspace="10" Vspace="10" alt="" style="width:80%" class="img-thumbnail">
+               <br>
+               <br><br><br>
+              Part 2: Regression Analysis and Predictions 
+              <br>
+              A time series object was created and the predictions were obtained using the Holt-Winters method.
+            The dark gray region reperesents the 80% confidence level. Light gray region represents the 95% 
+            confidence level.
+              <br>
+              <img src="pred.png" Hspace="10" Vspace="10" alt="" style="width:80%" class="img-thumbnail">
+              <hr style="height:2px;border-width:0;color:gold;background-color:gold">
+              </h4>
+              <br>
+
+            </div>
+            
+            <div class="col-sm-1"></div> 
+        </div>
+        
+         
+        <div class="row">
+            <div class="col-sm-1"></div> 
+            <div class="col-sm-10">
+            <h3>
+                Used: ETL, R, Time Series Analysis, Holt-Winters method
+                <br>
+                Github: https://github.com/lumindak/covid-19-predictions
+            </h3>
+            <br>
+            <hr style="height:2px;border-width:0;color:gold;background-color:gold">
+            </div>
+            <div class="col-sm-1"></div> 
+        </div> 
+        </div>
+    </body>
+ </html>
